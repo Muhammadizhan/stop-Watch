@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ffffff; /* Initial background color */
+    transition: background-color 1s ease; /* Smooth transition effect */
+}
+
+#stopwatch {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Animation to change background color every minute */
+@keyframes changeBackgroundColor {
+    0% { background-color: #ffffff; } /* Initial background color */
+    50% { background-color: #ffffcc; } /* Intermediate background color */
+    100% { background-color: #ccffff; } /* Final background color */
+}
+
+.container {
+    animation: changeBackgroundColor 60s infinite; /* Run the animation every 60 seconds */
+}
